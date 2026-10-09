@@ -1,29 +1,41 @@
 {
-  "tags": [
-    ""
-  ],
-  "name": "paths",
-  "description": "A Raku application for .",
-  "test-depends": [
-    ""
-  ],
-  "version": "0.1.0",
+  "auth": "zef:grizzlysmit",
   "authors": [
     "Francis Grizzly Smit <grizzly@smit.id.au>"
   ],
-  "support": {
-    "source": "https://github.com/grizzlysmit/paths.git",
-    "bugtracker": "https://github.com/grizzlysmit/paths/issues",
-    "email": "grizzly@smit.id.au"
-  },
-  "provides": {
-    "paths": "bin/paths.raku"
-  },
-  "license": "LGPL-3.0-or-later",
   "depends": [
-    ""
+    "Terminal::ANSI",
+    "Terminal::WCWidth",
+    "Terminal::Width",
+    "Gzz::Text::Utils",
+    "Syntax::Highlighters",
+    "GUI::Editors",
+    "Display::Listings",
+    "File::Utils",
+    "Terminal::ANSI",
+    "ECMA262Regex"
   ],
-  "auth": "zef:grizzlysmit",
+  "description": "This is the Paths.rakumod module used by paths.raku goto and g (note goto and g are aliases for paths.raku).",
+  "name": "Paths",
   "perl": "6.d",
-  "source-url": "https://github.com/grizzlysmit/paths.git"
+  "provides": {
+    "Paths.rakumod": "lib/Paths.rakumod"
+  },
+  "source-url": "https://github.com/grizzlysmit/gzz-goto.git",
+  "support": {
+    "bugtracker": "https://github.com/grizzlysmit/gzz-goto/issues",
+    "email": "grizzly@smit.id.au",
+    "source": "https://github.com/grizzlysmit/gzz-goto.git"
+  },
+  "tags": [
+    "goto",
+    "paths",
+    "bookmarks",
+    "cli",
+    "term",
+    "terminal"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.1.11"
 }
