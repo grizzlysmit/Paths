@@ -21,11 +21,11 @@
   "provides": {
     "Paths.rakumod": "lib/Paths.rakumod"
   },
-  "source-url": "https://github.com/grizzlysmit/gzz-goto.git",
+  "source-url": "https://github.com/grizzlysmit/Paths.git",
   "support": {
-    "bugtracker": "https://github.com/grizzlysmit/gzz-goto/issues",
+    "bugtracker": "https://github.com/grizzlysmit/Paths/issues",
     "email": "grizzly@smit.id.au",
-    "source": "https://github.com/grizzlysmit/gzz-goto.git"
+    "source": "https://github.com/grizzlysmit/Paths.git"
   },
   "tags": [
     "goto",
@@ -37,5 +37,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.1.12"
+  "version": "0.1.13"
 }
