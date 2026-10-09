@@ -1,0 +1,16 @@
+{
+    "bin": "bin",
+    "additional-pod-files": [
+    ],
+    "separate-markdown-files": false,
+    "lib": "rakulib",
+    "comment": "This is the Paths.rakumod module used by paths.raku goto and g (note goto and g are aliases for paths.raku).",
+    "name": "Paths",
+    "markdown-path": "README.md",
+    "exts": [
+        "rakumod",
+        "rakudoc"
+    ],
+    "only-app": false,
+    "docs": "docs"
+}
