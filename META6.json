@@ -1,0 +1,29 @@
+{
+  "tags": [
+    ""
+  ],
+  "name": "paths",
+  "description": "A Raku application for .",
+  "test-depends": [
+    ""
+  ],
+  "version": "0.1.0",
+  "authors": [
+    "Francis Grizzly Smit <grizzly@smit.id.au>"
+  ],
+  "support": {
+    "source": "https://github.com/grizzlysmit/paths.git",
+    "bugtracker": "https://github.com/grizzlysmit/paths/issues",
+    "email": "grizzly@smit.id.au"
+  },
+  "provides": {
+    "paths": "bin/paths.raku"
+  },
+  "license": "LGPL-3.0-or-later",
+  "depends": [
+    ""
+  ],
+  "auth": "zef:grizzlysmit",
+  "perl": "6.d",
+  "source-url": "https://github.com/grizzlysmit/paths.git"
+}
