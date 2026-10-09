@@ -230,10 +230,36 @@ L<Top of Document|#table-of-contents>
 INIT "Grammar::Debugger is on".say if $debug;
 
 # the home dir #
-constant $home is export = %*ENV<HOME>.Str();
+
+sub init-home(){
+    if $*DISTRO.is-win {
+        return $*HOME;
+    } else {
+        if $*PID == 0 {
+            return '/etc/gui-editors';
+        } else {
+            return $*HOME.Str;
+        }
+    }
+}
+
+constant $home = init-home();
 
 # config files
-constant $config is export = "$home/.local/share/paths";
+
+sub init-configs(){
+    if $*DISTRO.is-win {
+        return "$home/Documents/gui-editors";
+    } else {
+        if $*PID == 0 {
+            return $home;
+        } else {
+            return "$home/.local/share/gui-editors";
+        }
+    }
+}
+
+constant $config is export = init-configs();
 
 if $config.IO !~~ :d {
     $config.IO.mkdir();
