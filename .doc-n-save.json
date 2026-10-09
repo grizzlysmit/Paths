@@ -3,9 +3,9 @@
     "additional-pod-files": [
     ],
     "separate-markdown-files": false,
-    "lib": "rakulib",
+    "lib": "lib",
     "comment": "This is the Paths.rakumod module used by paths.raku goto and g (note goto and g are aliases for paths.raku).",
-    "name": "Paths",
+    "name": "Gzz::Paths",
     "markdown-path": "README.md",
     "exts": [
         "rakumod",

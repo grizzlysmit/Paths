@@ -19,7 +19,7 @@
   "name": "Paths",
   "perl": "6.d",
   "provides": {
-    "Paths.rakumod": "lib/Paths.rakumod"
+    "Paths.rakumod": "lib/GZZ/Paths.rakumod"
   },
   "source-url": "https://github.com/grizzlysmit/Paths.git",
   "support": {
@@ -37,5 +37,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.1.14"
+  "version": "0.1.16"
 }
