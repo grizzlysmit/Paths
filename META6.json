@@ -19,7 +19,7 @@
   "name": "Gzz::Paths",
   "perl": "6.d",
   "provides": {
-    "Paths.rakumod": "lib/GZZ/Paths.rakumod"
+    "Paths.rakumod": "lib/Gzz/Paths.rakumod"
   },
   "source-url": "https://github.com/grizzlysmit/Paths.git",
   "support": {
