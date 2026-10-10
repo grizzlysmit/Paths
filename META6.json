@@ -16,7 +16,7 @@
     "ECMA262Regex"
   ],
   "description": "This is the Paths.rakumod module used by paths.raku goto and g (note goto and g are aliases for paths.raku).",
-  "name": "Paths",
+  "name": "Gzz::Paths",
   "perl": "6.d",
   "provides": {
     "Paths.rakumod": "lib/GZZ/Paths.rakumod"
@@ -37,5 +37,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.1.16"
+  "version": "0.1.17"
 }
