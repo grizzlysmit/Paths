@@ -12,14 +12,13 @@
     "GUI::Editors",
     "Display::Listings",
     "File::Utils",
-    "Terminal::ANSI",
     "ECMA262Regex"
   ],
   "description": "This is the Paths.rakumod module used by paths.raku goto and g (note goto and g are aliases for paths.raku).",
   "name": "Gzz::Paths",
   "perl": "6.d",
   "provides": {
-    "Paths.rakumod": "lib/Gzz/Paths.rakumod"
+    "Gzz::Paths": "lib/Gzz/Paths.rakumod"
   },
   "source-url": "https://github.com/grizzlysmit/Paths.git",
   "support": {
@@ -37,5 +36,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.1.20"
+  "version": "0.1.21"
 }
