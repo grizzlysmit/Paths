@@ -1,4 +1,4 @@
-unit module Gzz::Paths:ver<0.1.21>:auth<Francis Grizzly Smit (grizzlysmit@smit.id.au)>;
+unit module Gzz::Paths:ver<0.1.22>:auth<Francis Grizzly Smit (grizzlysmit@smit.id.au)>;
 
 use Terminal::ANSI::OO :t;
 use Terminal::WCWidth;
@@ -41,7 +41,7 @@ Table of Contents
 
 =NAME Paths.rakumod 
 =AUTHOR Francis Grizzly Smit (grizzly@smit.id.au)
-=VERSION 0.1.21
+=VERSION 0.1.22
 =TITLE Paths.rakumod
 =SUBTITLE A Raku module to implement the paths command which keeps and accesses a database of bookmarks in the directory tree.
 
@@ -231,35 +231,27 @@ INIT "Grammar::Debugger is on".say if $debug;
 
 # the home dir #
 
-sub init-home(){
+sub init-home(--> Str:D){
     if $*DISTRO.is-win {
         return $*HOME;
     } else {
-        if $*PID == 0 {
-            return '/etc/gui-editors';
-        } else {
-            return $*HOME.Str;
-        }
+        return $*HOME.Str;
     }
 }
 
-constant $home = init-home();
+my Str:D $home = init-home();
 
 # config files
 
-sub init-configs(){
+sub init-configs(--> Str:D){
     if $*DISTRO.is-win {
         return "$home/Documents/paths";
     } else {
-        if $*PID == 0 {
-            return $home;
-        } else {
-            return "$home/.local/share/paths";
-        }
+        return "$home/.local/share/paths";
     }
 }
 
-constant $config is export = init-configs();
+our $config is export = init-configs();
 
 if $config.IO !~~ :d {
     $config.IO.mkdir();
